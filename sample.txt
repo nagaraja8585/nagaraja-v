@@ -1,1 +1,2 @@
-nagaraja
+ create view all_book as
+    -> select b.bookid,b.title,n.no_of_copies,n.programme_id,l.programme_name from book b,book_copies n,library_programme l where b.bookid=n.book_id and l.programme_id=n.programme_id;
